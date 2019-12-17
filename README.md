@@ -1,8 +1,8 @@
-# Uniswap-subgraph
+# SAINTFAMEdao-subgraph
 
 [Uniswap](https://uniswap.io/) is a decentralized protocol for automated token exchange on Ethereum.
 
-This Subgraph dynamically tracks any exchange created by the uniswap factory. Any exchange, any user of the protocol, and any transaction of the protocol can be queried.
+This Subgraph dynamically tracks the SAINTFAMEdao Subgraph. Any transaction of the protocol can be queried.
 
 ## Running Locally
 
@@ -56,7 +56,7 @@ This query fetches high level information on each uniswap exchange contract.
 
 ```graphql
 {
-  exchanges(where: { tokenSymbol: "MKR" }) {
+  exchanges(where: { tokenSymbol: "FAME" }) {
     id
     tokenAddress
     tokenSymbol
@@ -98,7 +98,7 @@ This query fetches high level information on each uniswap exchange contract.
 
 #### Transactions
 
-This query fetches a user trading Dai between two timestamps, and returns a maximum of ten of their transactions.
+This query fetches a user trading $FAME between two timestamps, and returns a maximum of ten of their transactions.
 
 ```graphql
 {
@@ -106,7 +106,7 @@ This query fetches a user trading Dai between two timestamps, and returns a maxi
     where: {
       timeStamp_gt: 1544832000
       timeStamp_lt: 1545696000
-      tokenSymbol: "DAI"
+      tokenSymbol: "FAME"
       userAddress: "0x85c5c26dc2af5546341fc1988b9d178148b4838b"
     }
     first: 10
@@ -159,11 +159,11 @@ This query fetches a single user, and all their exchange balances.
 
 #### ExchangeHistory
 
-This query fetches historical data for the MKR exchange, ordered by time:
+This query fetches historical data for the FAME exchange, ordered by time:
 
 ```graphql
 {
-  exchangeHistories(where: { tokenSymbol: "MKR" }, orderBy: timestamp, orderDirection: desc) {
+  exchangeHistories(where: { tokenSymbol: "FAME" }, orderBy: timestamp, orderDirection: desc) {
     id
     exchangeAddress
     tokenSymbol
