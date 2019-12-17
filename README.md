@@ -2,7 +2,7 @@
 
 [Uniswap](https://uniswap.io/) is a decentralized protocol for automated token exchange on Ethereum.
 
-This Subgraph dynamically tracks the SAINTFAMEdao Subgraph. Any transaction of the protocol can be queried.
+This Subgraph dynamically tracks the SAINTFAMEdao Uniswap exchange. Any transaction of the protocol can be queried.
 
 ## Running Locally
 
@@ -31,7 +31,7 @@ Below are a few ways to show how to query the uniswap-subgraph for data. The que
 
 ### Querying Aggregated Uniswap Data
 
-This query fetches aggredated data from all uniswap exchanges, to give a view into how much activity is happening within the whole protocol
+This query fetches aggredated data from all SAINTFAMEdao uniswap exchanges, to give a view into how much activity is happening within the whole protocol
 
 ```graphql
 {
