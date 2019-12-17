@@ -2,7 +2,7 @@
 
 [Uniswap](https://uniswap.io/) is a decentralized protocol for automated token exchange on Ethereum.
 
-This Subgraph dynamically tracks the SAINTFAMEdao Uniswap exchange. Any transaction of the protocol can be queried.
+This Subgraph dynamically tracks the [SAINTFAMEdao](https://www.saintfame.com/) Uniswap exchange. Any transaction of the protocol can be queried.
 
 ## Running Locally
 
