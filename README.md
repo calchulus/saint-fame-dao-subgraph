@@ -23,7 +23,7 @@ Make sure to update package.json settings to point to your own graph account.
   - Current Liquidity profit is:
     - `profit = totalWithdrawable - totalEth - totalTokensInEth`
 
-Currently only the top 50 coins have decimals incorporated into values. This is because not all uniswap exchanges created have proper ERC-20 interfaces, and calling decimals fails. So with dynamic contracts, we had to opt for hardcoding in the top 50 exchanges by volume. The others have tokens represented as the full large number. (i.e. 123456789123456789 instead of 1.23456789123456789). We are tracking this issue here: https://github.com/graphprotocol/graph-node/issues/892
+Currently only the $FAME token is considered in this fork of the Uniswap Subgraph
 
 ## Queries
 
